@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quize App</title>
+  <!--  -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+</head>
+
+<body>
+
+  <div class="quize_container">
+
+    <div class="choosing_phase">
+      <p>Choose What You Want</p>
+      <div class="inputs">
+        <div class="category">
+          <label for="">Category</label>
+          <select name="" id="category">
+            <option value="any">Any Category</option>
+            <option value="linux">Linux</option>
+            <option value="bash">Bash</option>
+            <option value="docker">Docker</option>
+            <option value="sql">SQL</option>
+            <option value="cms">CMS</option>
+            <option value="code">Code</option>
+            <option value="devops">DevOps</option>
+          </select>
+        </div>
+        <div class="nmbr_questions">
+          <label for="">Number Of Questions</label>
+          <select name="" id="nmbrOfQuestions">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+      </div>
+      <button class="next">Ready!</button>
+    </div>
+
+
+    <div class="quize_phase">
+
+      <div class="header">
+        <div class="title">Awesome Quize Application</div>
+        <div class="time_lefting_box">
+          <span>Time Left</span>
+          <span>40</span>
+        </div>
+        <div class="time_progress"></div>
+      </div>
+
+      <div class="body">
+        <div class="question"></div>
+        <ul class="answers_list">
+        </ul>
+      </div>
+
+      <div class="footer">
+        <div class="counter">
+          <span>0</span> of <span>0</span> Questions
+        </div>
+        <button class="next_que">Next Question</button>
+      </div>
+    </div>
+
+    <div class="quize_result">
+      <div class="title">Final Reslt</div>
+      <div class="res">
+        <span class="ur_answers"></span>
+      </div>
+      <div class="restart">
+        <button>Retake The Quize</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
